@@ -1,0 +1,17 @@
+header {
+  text-align: center;
+  font-family: "Snell Roundhand", "cursive";  
+}
+
+img {
+  max-width: 100%;
+  width: 600px;
+}
+
+hr {
+  margin-top: 3em;
+}
+
+main {
+  padding-bottom: 3em;
+}
