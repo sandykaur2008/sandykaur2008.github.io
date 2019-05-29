@@ -79,7 +79,7 @@ i.fab.fa-linkedin.fa-2x {
   padding: 0 .5em;
 }
 
-@media screen and (max-width: 976px) {
+@media screen and (max-width: 992px) {
   img {
     display: block; 
     margin-left: auto;
