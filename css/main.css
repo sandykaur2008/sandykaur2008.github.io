@@ -1,18 +1,88 @@
+i {
+  color: black;
+}
+
+i:hover {
+  color: #337ab7;
+}
+
 header {
   text-align: center;
-  font-family: "Snell Roundhand", "cursive";  
+  font-weight: bold;
+  padding-top: 2.75em;
+  margin-bottom: 3.125em;
+  background-color: #f5f8fa;
+  color: #3a4145;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: #337ab7;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 2.75em;
+  font-family: open sans,sans-serif;
+  font-weight: 600;
+  margin-top: 10px;
+  color: #3a4145;
 }
 
 img {
   max-width: 100%;
-  width: 600px;
-  border-radius: 12px;
-}
-
-hr.margin {
-  margin-top: 3em;
+  width: 500px;
+  margin-bottom: 15px;
 }
 
 main {
   padding-bottom: 3em;
+}
+
+body {
+  font-family: Nunito;
+}
+
+hr {
+  margin-bottom: 30px;
+}
+
+.border-bottom {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: rgba(0,0,0,.125);
+}
+
+.profile {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0,0,0,.125);
+  padding: .5em;
+  background-color: #fff;
+
+}
+
+.margin-bottom {
+  margin: 0 0 10px;
+}
+
+i.fab.fa-linkedin.fa-2x {
+  padding: 0 .5em;
+}
+
+@media screen and (max-width: 976px) {
+  img {
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+  } 
 }

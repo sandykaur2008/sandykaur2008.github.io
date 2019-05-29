@@ -4,79 +4,97 @@
     <title>Satinder Kaur</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/155/smiling-face-with-sunglasses_1f60e.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet"> 
-    <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/155/smiling-face-with-sunglasses_1f60e.png">
   </head> 
   <body>
-    <header> 
+    <header class='border-bottom'> 
       <div class="container">
-        <h1>Satinder's Portfolio</h1>
+        <img class='profile' src='images/profile.png' alt='profile picture of Satinder Kaur'>
+        <h1>Satinder Kaur</h1>
+        <h2>Full Stack Developer</h2>
+        <h4>sandykaur2008@protonmail.com</h4>
+        <a href='https://github.com/sandykaur2008'><i class="fab fa-github fa-2x"></i></a>
+        <a href='https://www.linkedin.com/in/sandykaur1/'><i class="fab fa-linkedin fa-2x margin-bottom"></i></a>
       </div>
     </header>
-    <hr>
-    <main class="container">
-      <div class="row">
-        <div class="offset-md-4">
-          <div class="card text-center">
-            <img class="card-img-top" src="images/mapsite.png" alt="Sandy's Mapsite">
-            <div class="card-body">
-              <a href="https://sandysmapsite.herokuapp.com/"><h5 class="card-title">Sandy's Mapsite</h5></a>
-              <p class="card-text">Built with MERN, users can pin and save locations on a map.</p>
-            </div>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-offset-2 col-md-4">
+            <a href="https://sandysmapsite.herokuapp.com/"><img src="images/mapsite.png" alt="Sandy's Mapsite"></a>
+          </div>
+          <div class="col-md-4">
+            <a href="https://sandysmapsite.herokuapp.com/"><p>Sandy's Mapsite</p></a>
+            <p>Built with MERN (MongoDB, Express, React, Node.js) stack, users can pin and save locations on a map. Deployed with Heroku. 
+                Frontend bootstrapped with Facebook’s Create React App, utilizes axios, and styled with Bootstrap. 
+                Map component rendered with react-leaflet, wrapper on Leaflet library, and leaflet-geosearch.
+                Backend utilizes MongoDB (mLab in production) for pin location storage, Express for routing, 
+                Passport.js for authentication, Mocha and Chai for testing, and Nodemailer and 
+                SendGrid for email functionality (e.g. receiving password reset, sending comments/questions).
+            </p>
           </div>
         </div>
-      </div>
-      <hr class="margin">
-      <div class="row">
-        <div class="offset-md-4">
-          <div class="card text-center">
-            <img class="card-img-top" src="images/parody.png" alt="Let's Be Honest"/>
-            <br></br>
-            <div class="card-body">
-              <a href="https://sandysparody.herokuapp.com/"><h5 class="card-title">Let's Be Honest</h5></a>
-              <p class="card-text">Parody of LinkedIn, built with MongoDB, Express, and Node.js</p>
-            </div>
+        <hr>
+        <div class="row">
+          <div class="col-md-offset-2 col-md-4">
+            <a href="https://sandysparody.herokuapp.com/"><img src="images/parody.png" alt="Let's Be Honest"/></a>
+          </div>
+          <div class="col-md-4">
+            <a href="https://sandysparody.herokuapp.com/"><p>Let's Be Honest</p></a>
+            <p>Parody of LinkedIn, built with MongoDB, Express, and Node.js during my time at Recurse Center. 
+              Deployed with Heroku. Socket.io used for chat.
+              Frontend built with Sass and Bootstrap. HTML templating done with EJS.
+              Backend utilizes MongoDB (mLab in production) for profile storage, Express for routing, 
+              Passport.js for authentication, Mocha and Chai for testing, and Nodemailer and 
+              SendGrid for email functionality (e.g. receiving password reset, sending comments/questions).
+            </p>
           </div>
         </div>
-      </div>
-      <hr class="margin">
-      <div class="row">
-        <div class="offset-md-4">
-          <div class="card text-center">
-            <img class="card-img-top" src="images/artsite.png" alt="Sandy's Artsite">
-            <div class="card-body">
-              <a href="https://sandys-artsite.herokuapp.com/"><h5 class="card-title">Sandy's Artsite</h5></a>
-              <p class="card-text">Users can post and comment on art, built with Django.</p>
-            </div>
+        <hr>
+        <div class="row">
+          <div class="col-md-offset-2 col-md-4">
+            <a href="https://sandys-artsite.herokuapp.com/"><img src="images/artsite.png" alt="Sandy's Artsite"></a>
+          </div>
+          <div class="col-md-4">
+            <a href="https://sandys-artsite.herokuapp.com/"><p>Sandy's Artsite</p></a>
+            <p>Users can post and comment on art, built with Django. Art stored with Amazon S3 buckets. Deployed with Heroku.
+              Frontend built with Sass and Bootstrap. GraphicsMagick and Grunt used for image resizing.
+              Backend utilizes SQLite (using sqlite3 module in Django) in development and Heroku 
+              Postgres in production for user storage, and Amazon S3 for art storage.
+            </p>
           </div>
         </div>
-      </div>
-      <hr class="margin">
-      <div class="row">
-        <div class="offset-md-4">
-          <div class="card text-center">
-            <img class="card-img-top" src="images/travels.png" alt="Sandy's Travels">
-            <br></br>
-            <div class="card-body">
-              <a href="https://sandystravels.herokuapp.com/"><h5 class="card-title">Sandy's Travels</h5></a>
-              <p class="card-text">Site documenting my world travels, built with Flask.</p>
-            </div>
+        <hr>
+        <div class="row">
+          <div class="col-md-offset-2 col-md-4">
+            <a href="https://sandys-nm-trip.herokuapp.com/"><img src="images/nmtrip.png" alt="Sandy's NM Trip"></a>
+          </div>
+          <div class="col-md-4">
+            <a href="https://sandys-nm-trip.herokuapp.com/"><p>Sandy's New Mexico Trip</p></a>
+            <p>Record of my trip to New Mexico, built with Flask. Deployed with Heroku.
+                Frontend built with Sass and Simple Grid. GraphicsMagick and Grunt used for image resizing. HTML templating done with Jinja2. 
+                Backend also utilizes SendGrid (for email functionality).
+            </p>
           </div>
         </div>
-      </div>
-      <hr class="margin">
-      <div class="row">
-        <div class="offset-md-4">
-          <div class="card text-center">
-            <img class="card-img-top" src="images/nmtrip.png" alt="Sandy's NM Trip">
-            <br></br>
-            <div class="card-body">
-              <a href="https://sandys-nm-trip.herokuapp.com/"><h5 class="card-title">Sandy's NM Trip</h5></a>
-              <p class="card-text">Site documenting my trip to New Mexico, built with Flask.</p>
+        <hr>
+        <div class="row">
+            <div class="col-md-offset-2 col-md-4">
+              <a href="https://sandystravels.herokuapp.com/"><img src="images/travels.png" alt="Sandy's Travels"></a>
+            </div>
+            <div class="col-md-4">
+              <a href="https://sandystravels.herokuapp.com/"><p>Sandy's Travels</p></a>
+              <p>Record of my world travels, built with Flask. My very first project! Deployed with Heroku.
+                  Frontend built with Sass and Simple Grid. GraphicsMagick and Grunt used for image resizing. HTML templating done with Jinja2. 
+                  Backend also utilizes SendGrid (for email functionality).
+              </p>
             </div>
           </div>
-        </div>
+          <hr>
       </div>
     </main> 
   </body> 
