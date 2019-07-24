@@ -74,14 +74,15 @@
         <hr>
         <div class="row">
           <div class="col-md-offset-2 col-md-4">
-            <a href="https://sandys-artsite.herokuapp.com/"><img src="images/artsite.png" alt="Sandy's Artsite"></a>
+            <a href="https://spk.sandys-artsite.com/"><img src="images/artsite.png" alt="Sandy's Artsite"></a>
           </div>
           <div class="col-md-4">
-            <a href="https://sandys-artsite.herokuapp.com/"><p>Sandy's Artsite</p></a>
-            <p>Users can post and comment on art, built with Django. Art stored with Amazon S3 buckets. Deployed with Heroku.
+            <a href="https://spk.sandys-artsite.com/"><p>Sandy's Artsite</p></a>
+            <a href="https://spk.sandys-artsite.com/"><p>https://spk.sandys-artsite.com/</p></a>
+            <p>Users can post and comment on art, built with Django. Dockerized and deployed with Amazon Fargate 
+              (behind Elastic Load Balancer), Amazon S3 for static resources, Amazon Certificate Manager for SSL certificate handling.
               Frontend built with Sass and Bootstrap. GraphicsMagick and Grunt used for image resizing.
-              Backend utilizes SQLite (using sqlite3 module in Django) in development and Heroku 
-              Postgres in production for user storage, and Amazon S3 for art storage.
+              Backend utilizes SQLite in development and Amazon RDS (Postgres) in production.
             </p>
           </div>
         </div>
